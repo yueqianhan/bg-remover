@@ -1,11 +1,5 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "framework": "nextjs",
-  "env": {
-    "REMOVEBG_API_KEY": {
-      "description": "Remove.bg API Key - 从 https://www.remove.bg/api 获取",
-      "value": ""
-    }
-  }
+  "framework": "nextjs"
 }

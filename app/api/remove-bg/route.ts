@@ -18,6 +18,7 @@ export async function POST(req: NextRequest) {
       method: 'POST',
       headers: {
         'X-Api-Key': process.env.REMOVEBG_API_KEY || '',
+        'Content-Type': 'application/octet-stream',
       },
       body: buffer,
     })
