@@ -1,0 +1,7 @@
+# Cloudflare Pages build configuration
+framework: static
+buildCommand: pnpm run build:cloudflare
+outputDirectory: .open-next
+nodeVersion: '22'
+environment:
+  PNPM_VERSION: '10.30.3'
