@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { LoginButton } from '@/components/login-button'
 
 export default function Home() {
   const [file, setFile] = useState<File | null>(null)
@@ -68,6 +69,11 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
       <div className="max-w-2xl mx-auto">
+        {/* 顶部导航栏 */}
+        <div className="flex justify-end mb-4">
+          <LoginButton />
+        </div>
+
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <h1 className="text-3xl font-bold text-center mb-2 text-gray-800">
             背景移除工具
